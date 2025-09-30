@@ -9,7 +9,7 @@ rows=$1
 cols=$2
 
 # 2) 두 값이 모두 숫자인지 확인
-if ! [[ "$rows" =~ ^[0-9]+$ ]] || ! [[ "$cols" =~ ^[0-9]+$ ]]; then
+if ! [[ "$rows" =~ ^-?[0-9]+$ ]] || ! [[ "$cols" =~ ^-?[0-9]+$ ]]; then
     echo "Invalid input"
     exit 1
 fi
